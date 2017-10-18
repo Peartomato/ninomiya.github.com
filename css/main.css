@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
     height: 100%;
     z-index: 8999;
-    background: rgba(136,246,0,0.8);
+    background: #84c1ff;
     display: table;
     opacity: 1;
     visibility: visible;
@@ -410,7 +410,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 #home {
     background-color: rgba(0,0,0, .5);
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/timg.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -431,7 +431,7 @@ h1, h2, h3, h4, h5, h6, p {
 .home-title h1 {
     font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-size: 4rem;
-    font-size: 64px;
+    font-size: 55px;
     font-weight: 700;
     color: #fff;
     letter-spacing: 3px;
@@ -451,7 +451,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 300;
     color: #fff;
     letter-spacing: 6px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 
     -webkit-transition: opacity 0.2s 1.6s ease-out;
@@ -542,7 +542,7 @@ h1, h2, h3, h4, h5, h6, p {
 .work-item img {
     width: auto;
     max-width: 100%;
-    height: auto;
+    height: 250px;
     border: 0;
     -ms-interpolation-mode: bicubic;
     vertical-align: middle;

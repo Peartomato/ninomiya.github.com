@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style>
+		li{
+			list-style: none;
+			width: 180px;
+			height: 40px;
+			background-color: pink;
+			position: relative;
+			left: 0;
+			top: 0;
+		}
+		.detail{
+			display: none;
+			width: 500px;
+			height: 300px;
+			background-color: orange;
+			position: absolute;
+			top: 0;
+			left: 180px;
+		}
+		li:hover .detail{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>
+				<a href="#">百度</a>
+				<div class="detail">这里是具体内容</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
