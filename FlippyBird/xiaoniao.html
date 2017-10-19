@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<canvas id="huabu" width="400" height="600" align ="center"></canvas>
+<script>
+    var huabu = document.getElementById("huabu").getContext("2d");
+    var img = new Image();
+    var imgb = new Image();
+    var imgc = new Image();
+    var imgd = new Image();
+    imgb.src = "images/bg.png";
+    img.src = "images/pipe.png";
+    imgd.src = "images/pipe.png";
+    imgc.src = "images/ground.png";
+    var left = 400;
+    var imagen = new Image();
+    var imageArr = ["images/xiaoniao0.gif ", "images/xiaoniao1.gif", "images/xiaoniao2.gif"];
+    var i = 0;
+    var HH = 0;
+    var score = 0;
+    var u =8;
+    var timer = setInterval(function () {
+        u=u+0.05;
+        left = left - u;
+
+        if (left < -100) {
+            left = 400;
+            score++;
+            HH = parseInt((Math.random() * 100));
+        }
+        huabu.clearRect(0, 0, 400, 600);
+        huabu.drawImage(imgb, 0, 0, 400, 600);
+        huabu.drawImage(imgc, 0, 500, 400, 100);
+        huabu.drawImage(img, 150, 500, 150, 800, left, 0, 100, 300 + HH);
+        huabu.drawImage(imgd, 0, 450, 150, 800, left, 400 + HH, 100, 100 - HH);
+        i++;
+        i = i % 3;
+        imagen.src = imageArr[i];
+        //图片的目标途径指向
+        huabu.drawImage(imagen, 100, H, 40, 30);
+        if (left > 60 && left < 140) {
+
+            if ((H < (300 + HH) || (H > 370 + HH))) {
+                var str = " GAME OVER ";
+                var str2 = " You get " + score + "points";
+                huabu.fillStyle = "rgb(0,255,255)";
+                huabu.font = "40px  Accent";
+                huabu.fillText(str, 10, 100);
+                huabu.fillText(str2, 10, 160);
+                clearInterval(timer);
+
+            }
+        } else {
+            if (H > 470) {
+                var str = " GAME OVER ";
+                huabu.fillStyle = "rgb(0,245,255)";
+                huabu.font = "40px  Accent";
+                huabu.fillText(str, 10, 200);
+                var str = " GAME OVER ";
+                var str2 = " You get " + score + "points";
+                huabu.fillText(str2, 10, 160);
+                clearInterval(timer);
+
+            }
+        }
+    }, 100);
+    //模拟重力加速度
+    var v1 = 10;
+    var v2;
+    var a = 10;
+    var s = 10;
+    var H = 350;
+    function autoAdd() {
+        v2 = v1 + a;
+        s = s + (v1 + v2) / 2;
+        H = H + s;
+    }
+    var timer2 = setInterval(autoAdd, 300);
+    //按键事件
+    window.onkeydown = function (event) {
+        var e = event || window.event;
+        if (e.keyCode == 32) {
+            s = 0;
+            H = H - 30;
+        }
+    }
+</script>
+</body>
+</html>

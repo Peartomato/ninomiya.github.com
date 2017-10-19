@@ -624,20 +624,20 @@ h1, h2, h3, h4, h5, h6, p {
     cursor: default;
 }
 
-.icon-twitter:before {
-    content: "\e600";
+.logoicon-sina-weibo:before {
+    content: "\ea9a";
 }
 
 .icon-linkedin:before {
     content: "\e601";
 }
 
-.icon-instagram:before {
-    content: "\e602";
+.logoicon-facebook:before {
+    content: "\ea90";
 }
 
-.icon-github:before {
-    content: "\e603";
+.logoicon-github:before {
+    content: "\eab0";
 }
 
 /* ==========================================================================

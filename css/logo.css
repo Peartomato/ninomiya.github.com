@@ -17,13 +17,37 @@
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    line-height: 1;
+    font-size: 1.6875rem;
+    font-size: 27px;
+    line-height: 1rem;
+    line-height: 16px;
+    color: #F10061;
+    padding: 6px;
+    margin: 0 27px;
 
-    /* Better Font Rendering =========== */
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+[class^="logoicon-"]:hover,
+[class*="logoicon-"]:hover {
+    color: #F83E89;
+}
 
+.social {
+    margin-top: 90px;
+    cursor: default;
+}
+.logoicon-facebook:before {
+    content: "\ea90";
+}
+.logoicon-twitter:before {
+    content: "\ea96";
+}
 .logoicon-sina-weibo:before {
     content: "\ea9a";
 }
