@@ -1026,7 +1026,7 @@ h1, h2, h3, h4, h5, h6, p {
             padding: 9px 0 9px 27px;
         }
 
-        .services-content ul li:first-child {
+        .services-content ul li:first-child,.services-content ul li.fuxiu {
             font-size: 0.8125rem;
             font-size: 13px;
         }
