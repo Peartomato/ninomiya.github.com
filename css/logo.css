@@ -37,11 +37,6 @@
 [class*="logoicon-"]:hover {
     color: #F83E89;
 }
-
-.social {
-    margin-top: 90px;
-    cursor: default;
-}
 .logoicon-facebook:before {
     content: "\ea90";
 }

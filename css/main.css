@@ -628,8 +628,8 @@ h1, h2, h3, h4, h5, h6, p {
     content: "\ea9a";
 }
 
-.icon-linkedin:before {
-    content: "\e601";
+.logoicon-twitter:before {
+    content: "\ea96";
 }
 
 .logoicon-facebook:before {
